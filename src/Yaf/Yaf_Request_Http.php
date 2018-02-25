@@ -93,9 +93,9 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取$_GET中名为$name的参数值
      * @example 
-     * @return 
+     * @return mixed
      */
-    public function getQuery()
+    public function getQuery($key)
     {
     }
 
@@ -115,9 +115,9 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取$_POST中名为$name的参数值
      * @example 
-     * @return 
+     * @return mixed
      */
-    public function getPost()
+    public function getPost($key)
     {
     }
 
@@ -148,9 +148,9 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取全局变量中的值（扫描顺序为$_POST，$_GET，$_COOKIE，$_SERVER）
      * @example 
-     * @return 
+     * @return mixed
      */
-    public function get()
+    public function get($key)
     {
     }
 
@@ -192,7 +192,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *判断是否为GET请求
      * @example 
-     * @return 
+     * @return boolean
      */
     public function isGet()
     {
@@ -247,7 +247,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *判断是否为CLI请求
      * @example 
-     * @return 
+     * @return boolean
      */
     public function isCli()
     {
@@ -469,7 +469,7 @@ class Yaf_Request_Http extends Yaf_Request_Abstract
      *设置请求的URI
      * @example 
      * @param  mixed $uri 
-     * @return 
+     * @return $this
      */
     public function setRequestUri($uri)
     {

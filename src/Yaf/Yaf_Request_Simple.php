@@ -103,7 +103,7 @@ final class Yaf_Request_Simple extends Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *构造方法
      * @example 
-     * @return 
+     * @return $this
      */
     public function __construct()
     {

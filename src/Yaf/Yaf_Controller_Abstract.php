@@ -91,7 +91,7 @@ abstract class Yaf_Controller_Abstract
      *(Yaf >= 3.0.2)
      *获取请求对象
      * @example 
-     * @return 
+     * @return \yaf_Request_Http
      */
     public function getRequest()
     {

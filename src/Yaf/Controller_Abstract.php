@@ -92,7 +92,7 @@ abstract class Controller_Abstract
      *(Yaf >= 3.0.2)
      *获取请求对象
      * @example 
-     * @return 
+     * @return \Yaf\Request\HTTP
      */
     public function getRequest()
     {

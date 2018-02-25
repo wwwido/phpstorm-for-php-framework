@@ -79,7 +79,7 @@ final class Session
      *(Yaf >= 3.0.2)
      *获取Session实例（单例模式）
      * @example 
-     * @return 
+     * @return $this
      */
     public static  function getInstance()
     {
@@ -103,7 +103,7 @@ final class Session
      * @example 
      * @param string $name (Yaf >= 3.0.2)
 获取session变量
-     * @return 
+     * @return mixed
      */
     public function get($name)
     {
@@ -129,7 +129,7 @@ final class Session
 设置session变量
      * @param mixed $value (Yaf >= 3.0.2)
 设置session变量
-     * @return 
+     * @return boolean
      */
     public function set($name, $value)
     {
@@ -142,7 +142,7 @@ final class Session
      * @example 
      * @param string $name (Yaf >= 3.0.2)
 撤消session变量
-     * @return 
+     * @return boolean
      */
     public function del($name)
     {

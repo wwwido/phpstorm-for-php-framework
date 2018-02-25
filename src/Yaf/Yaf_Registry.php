@@ -54,7 +54,7 @@ final class Yaf_Registry
      * @example 
      * @param string $name (Yaf >= 3.0.2)
 获取注册变量值
-     * @return 
+     * @return mixed
      */
     public static  function get($name)
     {
@@ -67,7 +67,7 @@ final class Yaf_Registry
      * @example 
      * @param string $name (Yaf >= 3.0.2)
 检测变量是否存在
-     * @return 
+     * @return boolean
      */
     public static  function has($name)
     {

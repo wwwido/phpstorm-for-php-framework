@@ -266,7 +266,7 @@ abstract class Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前模块名
      * @example 
-     * @return 
+     * @return string
      */
     public function getModuleName()
     {
@@ -277,7 +277,7 @@ abstract class Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前控制器名
      * @example 
-     * @return 
+     * @return string
      */
     public function getControllerName()
     {
@@ -288,7 +288,7 @@ abstract class Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前动作名
      * @example 
-     * @return 
+     * @return string
      */
     public function getActionName()
     {

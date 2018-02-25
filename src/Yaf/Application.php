@@ -74,12 +74,11 @@ final class Application
      *(Yaf >= 3.0.2)
      *构造函数，根据配置初始化YafX_Application
      * @example 
-     * @param mixed $config (Yaf >= 3.0.2)
-构造函数，根据配置初始化YafX_Application
+     * @param mixed $config (Yaf >= 3.0.2)构造函数，根据配置初始化YafX_Application
      * @param  mixed $environ 
-     * @return 
+     * @return $this
      */
-    public function __construct($config, $environ)
+    public function __construct($config, string  $section = ap.environ)
     {
     }
 
@@ -104,7 +103,7 @@ final class Application
      * @param  mixed $... 
      * @return 
      */
-    public function execute(Callable $entry, $...)
+    public function execute(Callable $entry, ...$val)
     {
     }
 
@@ -113,7 +112,7 @@ final class Application
      *(Yaf >= 3.0.2)
      *获取当前的YafX_Application实例.
      * @example 
-     * @return 
+     * @return \Yaf\Application
      */
     public static  function app()
     {
@@ -147,7 +146,7 @@ final class Application
      *(Yaf >= 3.0.2)
      *获取全局配置实例,即$this->config
      * @example 
-     * @return 
+     * @return \Yaf\Config\Ini
      */
     public function getConfig()
     {
@@ -169,7 +168,7 @@ final class Application
      *(Yaf >= 3.0.2)
      *获取当前请求的分发器YafX_Dispatcher的实例
      * @example 
-     * @return 
+     * @return \Yaf\Dispatcher
      */
     public function getDispatcher()
     {

@@ -73,12 +73,12 @@ final class Yaf_Application
      *(Yaf >= 3.0.2)
      *构造函数，根据配置初始化yaf_Application
      * @example 
-     * @param mixed $config (Yaf >= 3.0.2)
+     * @param string/array $config (Yaf >= 3.0.2)
 构造函数，根据配置初始化yaf_Application
      * @param  mixed $environ 
-     * @return 
+     * @return $this
      */
-    public function __construct($config, $environ)
+    public function __construct($config, $environ='product')
     {
     }
 
@@ -100,10 +100,10 @@ final class Yaf_Application
      * @example 
      * @param callable $entry (Yaf >= 3.0.2)
 运行回调函数，一般在命令行模式下运行.
-     * @param  mixed $... 
+     * @param  mixed $var.
      * @return 
      */
-    public function execute(Callable $entry, $...)
+    public function execute(Callable $entry, $var)
     {
     }
 
@@ -112,7 +112,7 @@ final class Yaf_Application
      *(Yaf >= 3.0.2)
      *获取当前的yaf_Application实例.
      * @example 
-     * @return 
+     * @return Yaf_Application
      */
     public static  function app()
     {
@@ -135,9 +135,9 @@ final class Yaf_Application
      *调用bootstrap
      * @example 
      * @param  mixed $bootstrap 
-     * @return 
+     * @return $this
      */
-    public function bootstrap($bootstrap)
+    public function bootstrap($bootstrap=null)
     {
     }
 
@@ -146,7 +146,7 @@ final class Yaf_Application
      *(Yaf >= 3.0.2)
      *获取全局配置实例,即$this->config
      * @example 
-     * @return 
+     * @return Yaf_Config_Ini
      */
     public function getConfig()
     {
@@ -168,7 +168,7 @@ final class Yaf_Application
      *(Yaf >= 3.0.2)
      *获取当前请求的分发器yaf_Dispatcher的实例
      * @example 
-     * @return 
+     * @return \Yaf_Dispatcher
      */
     public function getDispatcher()
     {

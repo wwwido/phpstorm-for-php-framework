@@ -149,7 +149,7 @@ final class Yaf_Config_Ini extends Yaf_Config_Abstract
      * 
      *(Yaf >= 3.0.2)
      * @example 
-     * @return 
+     * @return array
      */
     public function toArray()
     {

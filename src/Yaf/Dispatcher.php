@@ -234,7 +234,7 @@ final class Dispatcher
      *(Yaf >= 3.0.2)
      *返回请求对象实例
      * @example 
-     * @return 
+     * @return \Yaf\Request_Abstract
      */
     public function getRequest()
     {
@@ -339,7 +339,7 @@ final class Dispatcher
      *(Yaf >= 3.0.2)
      *返回当前YafX_Dispatcher实例（单例模式）
      * @example 
-     * @return 
+     * @return $this
      */
     public static  function getInstance()
     {
@@ -352,7 +352,7 @@ final class Dispatcher
      * @example 
      * @param YafX_Request_Abstract $request (Yaf >= 3.0.2)
 手动分发请求
-     * @return 
+     * @return \Yaf\Request_Abstract
      */
     public function dispatch($request)
     {
@@ -364,7 +364,7 @@ final class Dispatcher
      *开启/关闭异常抛出或返回当前状态
      * @example 
      * @param  mixed $flag 
-     * @return 
+     * @return $this
      */
     public function throwException($flag)
     {

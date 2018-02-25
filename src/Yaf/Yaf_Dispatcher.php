@@ -222,7 +222,7 @@ final class Yaf_Dispatcher
      * 
      *返回路由器实例
      * @example 
-     * @return 
+     * @return mixed
      */
     public function getRouter()
     {
@@ -233,7 +233,7 @@ final class Yaf_Dispatcher
      *(Yaf >= 3.0.2)
      *返回请求对象实例
      * @example 
-     * @return 
+     * @return \Yaf_Request_Abstract
      */
     public function getRequest()
     {
@@ -338,7 +338,7 @@ final class Yaf_Dispatcher
      *(Yaf >= 3.0.2)
      *返回当前yaf_Dispatcher实例（单例模式）
      * @example 
-     * @return 
+     * @return $this
      */
     public static  function getInstance()
     {
@@ -363,7 +363,7 @@ final class Yaf_Dispatcher
      *开启/关闭异常抛出或返回当前状态
      * @example 
      * @param  mixed $flag 
-     * @return 
+     * @return $this
      */
     public function throwException($flag)
     {

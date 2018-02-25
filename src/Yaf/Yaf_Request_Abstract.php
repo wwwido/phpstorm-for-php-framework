@@ -265,7 +265,7 @@ abstract class Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前模块名
      * @example 
-     * @return 
+     * @return string
      */
     public function getModuleName()
     {
@@ -276,7 +276,7 @@ abstract class Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前控制器名
      * @example 
-     * @return 
+     * @return string
      */
     public function getControllerName()
     {
@@ -287,7 +287,7 @@ abstract class Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取当前动作名
      * @example 
-     * @return 
+     * @return string
      */
     public function getActionName()
     {
@@ -299,7 +299,7 @@ abstract class Yaf_Request_Abstract
      *设置请求的模块名
      * @example 
      * @param  mixed $module 
-     * @return 
+     * @return string
      */
     public function setModuleName($module)
     {
@@ -379,7 +379,7 @@ abstract class Yaf_Request_Abstract
      *(Yaf >= 3.0.2)
      *获取请求的uri
      * @example 
-     * @return 
+     * @return string
      */
     public function getRequestUri()
     {
